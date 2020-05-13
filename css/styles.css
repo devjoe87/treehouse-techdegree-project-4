@@ -623,7 +623,7 @@ a {
 
 .default:hover {
   background-color: #9cecfd;
-  transition: background-color, 0.8s;
+  transition: background-color, 0.3s;
 }
 
 .error {
@@ -632,7 +632,7 @@ a {
 
 .error:hover {
   background-color: #f1b5b8;
-  transition: background-color, 0.8s;
+  transition: background-color, 0.3s;
 }
 
 .info {
@@ -641,7 +641,7 @@ a {
 
 .info:hover {
   background-color: #bdafd9;
-  transition: background-color, 0.8s;
+  transition: background-color, 0.3s;
 }
 
 .success {
@@ -650,7 +650,7 @@ a {
 
 .success:hover {
   background-color: #9ddfb0;
-  transition: background-color, 0.8s;
+  transition: background-color, 0.3s;
 }
 
 .warning {
@@ -659,7 +659,7 @@ a {
 
 .warning:hover {
   background-color: #feb4a2;
-  transition: background-color, 0.8s;
+  transition: background-color, 0.3s;
 }
 
 /* ============================================= */
