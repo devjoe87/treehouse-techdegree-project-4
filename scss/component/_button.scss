@@ -1,0 +1,29 @@
+
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: $white;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+  @include medqry($break-m) {
+    padding: 10px 30px;
+    margin-left: 10px;
+  }
+}
+
+@each $button, $color in $btns {
+  #{$button} {
+    background-color: $color;
+  }
+  #{$button}:hover {
+    background-color: lighten($color, 15%);
+    transition: background-color, .3s;
+  }
+}
+

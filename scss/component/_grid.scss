@@ -1,0 +1,66 @@
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+
+.container {
+  padding: 0 10px;
+  @include medqry($break-m) {
+    max-width: 1400px;
+    @include meddisp;
+  }
+}
+
+.centered {
+  @include medqry($break-m) {
+  @include meddisp;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 10px;
+  @include medqry($break-m) {
+    flex-direction: row;
+  }
+}
+
+[class^=col] {
+  margin-top: 10px;
+  flex-basis: 100%;
+  min-height: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  @include medqry($break-m) {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+  }
+}
+
+
+@each $col, $color in $themes {
+  .theme#{$col} {
+    background-color: $color;
+    }
+  }
+
+.card {
+  flex-basis: 100%;
+}
+
+@media (min-width: $break-m) {
+   @for $i from 1 through 12 {
+     .col-#{$i} {
+       flex-basis: $flex-w * $i;
+  }
+ }
+
+  [class^=col] + [class^=col] {
+    @include medqry($break-m) {
+      margin-left: 10px;
+  }
+}
+
+}

@@ -1,0 +1,24 @@
+/* ============================================= */
+/*              Images                           */
+/* ============================================= */
+
+.img {
+  &-avatar {
+    @include img; 
+    max-height: 100%;
+  }
+
+  &-frame {
+    @include img;
+    padding: 13px;
+    border: 1px solid $color-img-border;
+  }
+
+  &-logo {
+    @include meddisp;
+    @include medqry($break-m) {
+      margin-left: initial;
+      margin-right: initial;
+    }
+  }
+}
